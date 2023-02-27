@@ -1,0 +1,138 @@
+.window{
+    width: 300px;
+    height: 600px;
+    box-shadow: 0px 0px 1px 0.5px black;
+    border-radius: 30px;
+    margin: 70px auto;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    border: 3px solid black;
+}
+
+.window__okno{
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.window__item{
+    width: 70%;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+}
+
+.window__item::placeholder{
+    color: white;
+}
+
+.window__content{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size:auto;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: url(/img/back.jpg);
+    background-size: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    justify-content: end;
+}
+
+
+.window__div{
+    height: fit-content;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.window__div__item{
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+}
+
+.borderRight{
+    border-radius: 20px 20px 0px 20px;
+    animation: 0.1s 1 alternate linear messageRight;
+}
+
+@keyframes messageRight {
+    from{
+        margin-right: -200px;
+    }
+
+    to {
+
+    }
+}
+
+.borderLeft{
+    border-radius: 20px 20px 20px 0px;
+    animation: 0.5s 1 alternate linear messageRight;
+}
+
+@keyframes messageLeft {
+    from{
+        margin-right: -200px;
+    }
+
+    to {
+
+    }
+}
+
+.right{
+    justify-content: end;
+}
+
+.left{
+    justify-content: start;
+}
+
+.window__item:focus{
+    border: 1px solid ;
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    align-items: center;
+    background-color: #6a717d;
+    background-size: cover;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.buttonGo{
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: url(/img/images.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/* Стили для отступов */
